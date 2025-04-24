@@ -4,8 +4,9 @@ import tailwind from "@astrojs/tailwind";
 import astroIcon from 'astro-icon';
 import playformCompress from "@playform/compress";
 
-// https://astro.build/config
+
 export default defineConfig({
+  site:'sergiodd.github.io',
   integrations: [
     tailwind(),
     astroIcon({
@@ -19,7 +20,7 @@ export default defineConfig({
       CSS: false,
       Image: false,
       Action: {
-        Passed: async () => true,   // https://github.com/PlayForm/Compress/issues/376
+        Passed: async () => true,   
       },
     })
   ],
