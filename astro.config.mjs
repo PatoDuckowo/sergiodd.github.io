@@ -2,12 +2,11 @@
 import { defineConfig } from "astro/config";
 import tailwind from "@astrojs/tailwind";
 import astroIcon from 'astro-icon';
-import sitemap from '@astrojs/sitemap';
 import playformCompress from "@playform/compress";
 
 
 export default defineConfig({
-  site:'sergiodd.github.io',
+site: 'https://sergiodd.github.io',
   integrations: [
     tailwind(),
     astroIcon({
